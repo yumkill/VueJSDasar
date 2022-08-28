@@ -1,5 +1,11 @@
 # vueblog
 
+## catatan
+
+```
+emit,ref,router,v-if,composition api
+```
+
 ## Project setup
 ```
 npm install
