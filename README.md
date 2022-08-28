@@ -1,9 +1,9 @@
-# vueblog
+# VueBlog Composition API
 
 ## catatan
 
 ```
-emit,ref,router,v-if,composition api
+src/views/HomeView.vue
 ```
 
 ## Project setup
