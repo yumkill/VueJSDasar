@@ -2,7 +2,10 @@
   <div class="home">
     <h1>Home</h1>
 
-    <PostList :posts="posts" />
+    <PostList v-if="showPosts" :posts="posts" />
+
+    <button @click="showPosts = !showPosts">Unmounted</button>
+    <button @click="posts.pop()">Delete Post</button>
 
   </div>
 </template>
@@ -30,7 +33,12 @@ export default {
                 body: "Ketika Bos suruh Machine Learning Pakai Java auto mokad lah ente kadang kadang deh suee banget emang jadi bos untung lu boss gue"
             }
         ]);
-        return { posts };
+
+
+        const showPosts = ref(true)
+
+
+        return { posts,showPosts };
     },
     components: { PostList }
 }
