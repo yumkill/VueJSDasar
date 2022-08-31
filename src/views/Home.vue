@@ -8,33 +8,20 @@
 
 <script>
 // @ is an alias to /src
-import { ref} from 'vue';
+
 import PostList from '../components/PostList.vue'
+import getPosts from '../composable/getPosts';
 
 export default {
     name: "Home",
     components: {
-      PostList
+      PostList,
     },
     setup() {
-        const posts = ref([]);
-        const error = ref(null)
 
-         const load = async () => {
-          try{
-            let data = await fetch('http://localhost:3000/posts')
-            if (! data.ok){
-              throw Error('Tidak ada Data')
-            }
-            posts.value = await data.json()
-          } catch (err){
-            error.value = err.message
-          }
-         } 
+        const {posts,error,load} = getPosts();
 
          load();
-
-        // const showPosts = ref(true)
 
 
         return { posts, error};
