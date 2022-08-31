@@ -1,0 +1,24 @@
+{
+    "posts" : [
+        {
+            "id" : 1,
+            "title" : "Artikel Pertama",
+            "body" : "Lorem pada kemana ini AFK Semua kalian ini kerja apa gabut sih? main game FF mulu kea jago saja" ,
+            "tags" : [
+                "web",
+                "vue",
+                "node"
+            ]
+        },
+        {
+            "id" : 2,
+            "title" : "Artikel Kedua",
+            "body" : "Si Lorem kalau kerja pasti bucin mulu kerjaan di tinggalin keasyikan ama cewek nya ahh dasar jomblo akut" ,
+            "tags" : [
+                "js",
+                "vue",
+                "node"
+            ]
+        }
+    ]
+}

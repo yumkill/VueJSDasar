@@ -1,9 +1,17 @@
-# vueblog
+# VueBlogJS3
 
-## catatan
+## Catatan
 
 ```
 emit,ref,router,v-if,composition api
+```
+
+## Fake Rest api
+
+```
+npm run serve
+lalu bikin terminal baru
+json-server --watch data/db.json
 ```
 
 ## Project setup
