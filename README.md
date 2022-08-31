@@ -1,11 +1,5 @@
 # VueBlogJS3
 
-## Catatan
-
-```
-emit,ref,router,v-if,composition api
-```
-
 ## Fake Rest api
 
 ```
