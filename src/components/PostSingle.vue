@@ -1,7 +1,10 @@
 <template>
-
-    <h3>{{post.title}}</h3>
-    <p>{{snippet}}</p>
+<div>
+    <router-link :to=" { name: 'ShowPost', params: {id :post.id} } ">
+        <h3>{{post.title}}</h3>  
+    </router-link>
+        <p>{{snippet}}</p>
+</div>
 
 </template>
 
@@ -13,7 +16,7 @@ import { computed } from 'vue';
         props: ['post'],
         setup(props){
             const snippet = computed(() => {
-                return props.post.body.substring(0,50) + '.......'
+                return props.post.body.substring(0,50) + '....'
             })
 
             return {snippet}
