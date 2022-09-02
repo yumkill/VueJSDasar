@@ -2,7 +2,12 @@
   <div class="home">
     <h1>Home</h1>
     <div v-if="error">{{error}}</div>
-    <PostList :posts="posts" />
+    <div v-if="posts.length">
+      <PostList :posts="posts" />
+    </div>
+    <div v-else>
+      <Loading />
+    </div>
   </div>
 </template>
 
@@ -11,11 +16,13 @@
 
 import PostList from '../components/PostList.vue'
 import getPosts from '../composable/getPosts';
+import Loading from '@/components/Loading.vue';
 
 export default {
     name: "Home",
     components: {
       PostList,
+      Loading,
     },
     setup() {
 
@@ -26,6 +33,6 @@ export default {
 
         return { posts, error};
     },
-    components: { PostList }
+    components: { PostList, Loading }
 }
 </script>
