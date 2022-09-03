@@ -1,24 +1,74 @@
 {
-    "posts" : [
-        {
-            "id" : 1,
-            "title" : "Artikel Pertama",
-            "body" : "Lorem pada kemana ini AFK Semua kalian ini kerja apa gabut sih? main game FF mulu kea jago saja" ,
-            "tags" : [
-                "web",
-                "vue",
-                "node"
-            ]
-        },
-        {
-            "id" : 2,
-            "title" : "Artikel Kedua",
-            "body" : "Si Lorem kalau kerja pasti bucin mulu kerjaan di tinggalin keasyikan ama cewek nya ahh dasar jomblo akut" ,
-            "tags" : [
-                "js",
-                "vue",
-                "node"
-            ]
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "Artikel Pertama",
+      "body": "Lorem pada kemana ini AFK Semua kalian ini kerja apa gabut sih? main game FF mulu kea jago saja",
+      "tags": [
+        "web",
+        "vue",
+        "node"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Artikel Kedua",
+      "body": "Si Lorem kalau kerja pasti bucin mulu kerjaan di tinggalin keasyikan ama cewek nya ahh dasar jomblo akut",
+      "tags": [
+        "js",
+        "vue",
+        "node"
+      ]
+    },
+    {
+      "title": "Artikel Ketiga Vue",
+      "body": "ini adalah artikel ketiga dari vue js dari pembawa acara kesayangan kita semua ya guys.",
+      "tags": [
+        "vue",
+        "firebase"
+      ],
+      "id": 3
+    },
+    {
+      "title": "Artikel Keempat",
+      "body": "Ini adalah artikel ke empat setelah kita tadi bikin create post aja ke home redirect guys",
+      "tags": [
+        "vue",
+        "javascript"
+      ],
+      "id": 4
+    },
+    {
+      "title": "Artikel Keempat",
+      "body": "Ini adalah artikel ke empat setelah kita tadi bikin create post aja ke home redirect guys",
+      "tags": [
+        "vue",
+        "javascript"
+      ],
+      "id": 5
+    },
+    {
+      "title": "adfafafasf",
+      "body": "safasgfsagsggs",
+      "tags": [
+        "vue"
+      ],
+      "id": 6
+    },
+    {
+      "title": "fafaf",
+      "body": "fafafafa",
+      "tags": [],
+      "id": 7
+    },
+    {
+      "title": "Artikel Keempat",
+      "body": "ini dia yang keempat buat bikin create post guys",
+      "tags": [
+        "vue",
+        "javascript"
+      ],
+      "id": 8
+    }
+  ]
 }

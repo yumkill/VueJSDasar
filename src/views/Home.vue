@@ -19,7 +19,7 @@ import getPosts from '../composable/getPosts';
 import Loading from '@/components/Loading.vue';
 
 export default {
-    name: "Home",
+    name: 'Home',
     components: {
       PostList,
       Loading,
