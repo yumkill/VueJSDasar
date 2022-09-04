@@ -3,14 +3,17 @@
 ## Catatan
 
 ```
-emit,ref,router,v-if,composition api
+ref,router,composable, bootstrap5
 ```
 
 ## Fake Rest api
 
 ```
 npm run serve
+```
 lalu bikin terminal baru
+
+```
 json-server --watch data/db.json
 ```
 

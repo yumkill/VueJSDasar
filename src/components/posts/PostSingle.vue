@@ -1,13 +1,20 @@
 <template>
-<div>
-    <router-link :to=" { name: 'ShowPost', params: {id :post.id} } ">
-        <h3>{{post.title}}</h3>  
-    </router-link>
-        <p>{{snippet}}</p>
-        <span v-for="tag in post.tags" :key="tag">
-            #{{tag}}
-        </span>
-</div>
+
+<router-link :to=" { name: 'ShowPost', params: {id :post.id} } ">
+    <h2 class="post-title">
+        {{post.title}}
+    </h2>
+    <h3 class="post-subtitle">
+        {{snippet}}
+    </h3>
+</router-link>
+
+<span 
+    v-for="tag in post.tags" :key="tag"
+    class="post-meta"
+>
+    #{{tag}}
+</span>
 
 </template>
 
