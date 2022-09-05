@@ -69,6 +69,27 @@
         "javascript"
       ],
       "id": 8
+    },
+    {
+      "title": "Testing Clean Blog Slicing Create Post",
+      "body": "Isi nya orang orang AFK yang tadi pada nyari duit malam hari tau tau nya nyasar kesini buat bikin kodingan rampung gak jelas nih emang dasar si lorem ipsum",
+      "tags": [],
+      "id": 9
+    },
+    {
+      "title": "Testing tags Clean blog",
+      "body": "ini habis lorem ipsum testing data slicing aja dulu",
+      "tags": [],
+      "id": 10
+    },
+    {
+      "title": "Data tags isi aja",
+      "body": "datar jfl;asjgfaos; s;fljs;lfjs afjslf;jas;flj fjsl;fj saj fls;a",
+      "tags": [
+        "vue",
+        "js"
+      ],
+      "id": 11
     }
   ]
 }

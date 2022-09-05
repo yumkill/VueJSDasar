@@ -17,6 +17,14 @@ lalu bikin terminal baru
 json-server --watch data/db.json
 ```
 
+## Create Post
+
+```
+http://localhost:8081/posts/create
+```
+
+tinggal send aja tags nya di enter
+
 ## Project setup
 ```
 npm install

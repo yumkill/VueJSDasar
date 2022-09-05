@@ -1,26 +1,50 @@
 <template>
-    <div>
-        <form @submit.prevent="handleSubmit">
-            <div>
-                <label for="">Title</label>
-                <input type="text" v-model="title">
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('img/contact-bg.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>Create new post</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="">Body</label>
-                <textarea cols="30" rows="10" v-model="body"></textarea>
+        </div>
+</header>
+
+<!-- Main Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="my-5">
+                    <form @submit.prevent="handleSubmit">
+                        <div class="form-floating">
+                            <input class="form-control" type="text" placeholder="Tulis Judul Artikel" v-model="title" />
+                            <label for="name">Title</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Tulis Deskripsi artikel disini..." style="height: 12rem" v-model="body" ></textarea>
+                            <label for="message">Body</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" type="text" placeholder="Input Tags nya" v-model="tag" @keydown.enter.prevent="handleKeydown" />
+                            <label for="name">Tags</label>
+                            <span v-for="tag in tags" :key="tag">
+                                 #{{tag}}
+                            </span>
+                        </div>
+                        <br />
+                        <button class="btn btn-primary text-uppercase"  type="submit">Send</button>
+                    </form>
+                </div>
             </div>
-            <div>
-                <label for="">Tags</label>
-                <input type="text" v-model="tag" @keydown.enter.prevent="handleKeydown">
-            </div>
-            <button type="submit">Create</button>
-        </form>
-            <div v-for="tag in tags" :key="tag">
-                #{{tag}}
-            </div>
-            {{title}}
-            {{body}}
+        </div>
     </div>
+</main>
+    
+
 </template>
 
 <script>
