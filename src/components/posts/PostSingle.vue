@@ -13,7 +13,10 @@
     v-for="tag in post.tags" :key="tag"
     class="post-meta"
 >
-    #{{tag}}
+    <router-link :to="{name: 'Tag', params : {tag:tag}}">
+        #{{tag}}
+    </router-link>
+    
 </span>
 
 </template>
