@@ -4,8 +4,10 @@
 
 ```
 src/views/HomeView.vue
-Bisa Cek Branch nya yah
 ```
+
+Bisa Cek Branch nya yah
+https://github.com/yumkill/VueJSDasar/tree/firebase_test
 
 ## Project setup
 ```
