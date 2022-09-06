@@ -1,4 +1,5 @@
 import { ref } from 'vue';
+import { projectFirestore } from '@/firebase/config';
 
 const getPost = (id) => {
 
@@ -7,16 +8,18 @@ const getPost = (id) => {
 
     const load = async () => {
         try{
+            const res = await projectFirestore.collection('posts')
+                .doc(id)
+                .get()
 
-            await new Promise(resolve => {
-                setTimeout(resolve,1500)
-            })
-            
-            let data = await fetch('http://localhost:3000/posts/' + id)
-            if (! data.ok){
-                throw Error('Tidak ada Data')
+            if (! res.exists){
+                throw Error('Data tidak ditemukan')
             }
-            post.value = await data.json()
+
+            post.value = {
+                ...res.data(),
+                id: res.id
+            }
         } catch (err){
         error.value = err.message
         }

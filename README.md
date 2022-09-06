@@ -6,13 +6,18 @@
 ref,router,composable, bootstrap5
 ```
 
+## Firebase
+
+```
+Firestore 
+```
+
 ## Fake Rest api
 
 ```
 npm run serve
 ```
 lalu bikin terminal baru
-
 ```
 json-server --watch data/db.json
 ```
@@ -33,11 +38,6 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
 ```
 
 ### Customize configuration
