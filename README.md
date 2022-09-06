@@ -1,9 +1,10 @@
 # VueBlog Composition API
 
-## catatan
+## Catatan
 
 ```
 src/views/HomeView.vue
+Bisa Cek Branch nya yah
 ```
 
 ## Project setup
