@@ -10,7 +10,11 @@ emit,ref,router,v-if,composition api
 
 ```
 npm run serve
+```
+
 lalu bikin terminal baru
+
+```
 json-server --watch data/db.json
 ```
 
